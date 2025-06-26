@@ -1,7 +1,10 @@
-import { configureStore } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 import reducers from './Reducers/index'
 
-const store = configureStore(reducers, {}, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = configureStore({
+    reducer: reducers
+})
+
 
 
 export default store;
