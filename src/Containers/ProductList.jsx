@@ -6,8 +6,8 @@ import { setProducts } from '../Redux/Actions/ProductActions';
 import ProductComponent from "./ProductComponent";
 
 const ProductList = () => {
-    const dispatch = useDispatch();
 
+    const dispatch = useDispatch();
     const fetchProducts = async () => {
         try {
             const response = await axios.get('https://fakestoreapi.com/products');
